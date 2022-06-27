@@ -13,7 +13,7 @@ The following document describes how to setup a Metis verifier node on GCP.  The
 8. Edit Verifier Configuration
 9. Start Verifier Docker Containers
 
-Note: Metis verifiers must be approved by the official MetisDAO team before receiving verifier rewards.  For more information, send an email verifier@metis.io.  Also note, this tutorial borrows heavily from the original - yet somewhat out of date [Metis Verifier Tutorial](https://github.com/ericlee42/metis-verifier-node-setup).
+Note: Metis verifiers must be approved by the official MetisDAO team before receiving verifier rewards.  For more information, send an email to verifier@metis.io.  Also note, this tutorial borrows heavily from the original (yet somewhat out of date) [Metis Verifier Tutorial](https://github.com/ericlee42/metis-verifier-node-setup).
 
 It should also be noted that running a verifier node on "bare metal" (your own computer) is preferred when compared to centralized cloud providers.  Although centralized providers offer uptime guarantees and convenience - they also become single points of failure.  Chains must become less dependent on centralized providers for adequate decentralization to occur - encouraging Verifiers to explore their own hardware & decentralized cloud providers (such as [Askash](https://akash.network/)).
 
