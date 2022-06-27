@@ -120,7 +120,7 @@ Select **Create**.
 
 ## Install Git on the VM Instance
 
-Navigate back to the VM instance dashboard by clicking the 3 lines in the top left and selecting Cloud Computing, VM Instances.
+Navigate back to the VM instance dashboard by clicking the 3 lines in the top left and selecting Compute Engine -> VM Instances.
 
 ![virtual_menu](/tutorials/images/virtual_menu.jpg)
 
