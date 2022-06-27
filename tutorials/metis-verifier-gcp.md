@@ -176,7 +176,7 @@ To work around this error complete the following commands to remove docker-compo
 
 ## Copy the Metis Verifyer Docker Configuration File
 
-`cp docker-compose-mainnet.yml docker-compose.yml`.
+`cp docker-compose-mainnet.yml docker-compose.yml`
 
 ## Open the File to Edit the Necessary ETH RPC Parameters 
 
@@ -237,6 +237,8 @@ More info to come...
 
 `curl 'http://localhost:8080/verifier/get/true/1088'`
 
+More info to come...
+
 ## Contact Metis Team
 Once you have verified all the above steps are complete, contact the Metis team at verifier@metis.io and provide your ERC20 wallet address + virtual machine external IP address.
 
@@ -245,13 +247,13 @@ Once you have verified all the above steps are complete, contact the Metis team 
 
 Congratulations, with the exception of waiting on the Metis team to verify your verifier is accepted (pun intended) you're now running a Metis Verifier node!  
 
-But what exactly did you just do?  Well, you created a Google Cloud Account, whih allowed you to spin up a virual machine in the cloud.  You then logged into that virual machine over SSH (secure shell) and downlaoded Git. Git is a universally accepted software version control package.  Git was required to copy the git repository (read code) from the Metis codebase tothe virtual compute instance you created.
+But what exactly did you just do?  Well, you created a Google Cloud Account. This allowed you to spin up a virual machine in the cloud.  You then logged into that virual machine over SSH (secure shell) and downloaded Git. Git is a universally accepted software version control package.  Git was required to copy the git repository (read code) from the Metis codebase to the virtual compute instance you created.
 
-Next, becuase the Metis Verifier code is "containerize", you installed Docker.  Docker is a infrastructure software that allows developers to "container-ize" thier applications (keeping the environment of each application seperate).  In simple terms - docker containers are efficient ways to package and run application specific code on different devices.
+Next, becuase the Metis Verifier code is "containerized", you installed Docker.  Docker is an infrastructure software that allows developers to "containerize" thier applications (keeping the environment of each application seperate).  In simple terms, docker containers are efficient ways to package and run application specific code on different devices.
 
-Additionally, the Metis verifier code is actually comprised of multiple docker containers.  So you installed Docker Compose - an additional package built to make running multiple containers much easier.
+Additionally, the Metis Verifier code is actually comprised of multiple docker containers.  So you installed Docker Compose - an additional package specifically designed to simplify running multiple containers.
 
-Thus, after cloning the codebase with git and installing docker + docker compose - you edited the main docker configuration file with an acceptable RPC endpoint and spun up the first container `dtl-mainnet`.  After you checked the logs to verify this container spun up correctly - you started two additional containers `dtl-expose` and `l2geth-mainnet`.
+Finally, after cloning the codebase with git and installing docker + docker compose - you edited the main docker configuration file with an acceptable RPC endpoint and started the first container `dtl-mainnet`.  After you checked the logs to verify this container started correctly - you ran two additional containers `dtl-expose` and `l2geth-mainnet`.
 
 
 
