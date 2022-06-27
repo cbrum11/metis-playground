@@ -124,7 +124,7 @@ Navigate back to the VM instance dashboard by clicking the 3 lines in the top le
 
 ![virtual_menu](/tutorials/images/virtual_menu.jpg)
 
-SSH (secure shell) into the VM Instance by clicking SSH from the dashboard view.  If you are unfamiliar with SSH - it is simply a way to remotely login to the command line interface of a remote device.
+SSH (secure shell) into the VM Instance by clicking SSH from the dashboard view.  If you are unfamiliar with SSH - it is simply a way to login to the command line interface of a remote device.
 
 ![vm_instance_dash](/tutorials/images/vm_instance_dash.jpg)
 
