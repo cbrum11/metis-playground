@@ -21,7 +21,7 @@ Navigate to the [Google Cloud Platform](https://cloud.google.com/) and login wit
 
 Click the Console link to arrive at the cloud platform dashboard.
 
-![Console Button](/images/"Screen Shot 2022-06-26 at 4.47.02 PM.jpg")
+![Console Button](/tutorials/images/"Screen Shot 2022-06-26 at 4.47.02 PM.jpg")
 
 ## Setup a Billing Account
 
