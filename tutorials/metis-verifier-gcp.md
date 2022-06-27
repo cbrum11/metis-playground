@@ -128,7 +128,7 @@ SSH (secure shell) into the VM Instance by clicking SSH from the dashboard view.
 
 ![vm_instance_dash](/tutorials/images/vm_instance_dash.jpg)
 
-When the remote terminal session opens, update & upgrade the Linux packages on the device by running the following two commands.  This is simply best practice when initializing a new linux VM.
+When the remote terminal session opens, update & upgrade the Linux packages on the device by running the following two commands.  This is simply best practice when initializing a new Linux VM.
 
 `sudo apt-get update`
 
@@ -144,7 +144,7 @@ When the remote terminal session opens, update & upgrade the Linux packages on t
 
 ## Install Docker Compose
 
-`sudo apt-get-install docker-compose`
+`sudo apt-get install docker-compose`
 
 Convenience - To be able to run docker and docker-compose commands without `sudo`, enter the following.
 
@@ -155,6 +155,8 @@ Convenience - To be able to run docker and docker-compose commands without `sudo
 `newgrp docker` 
 
 Note: at the time of this document, there is a docker/docker-compose version bug that will cause the following error when trying to run docker containers.
+
+![docker_error](/tutorials/images/docker_error.jpg)
 
 To work around this error complete the following commands to remove docker-compose and download/install the most recent version (1.29.2 at the time of this tutorial).
 
