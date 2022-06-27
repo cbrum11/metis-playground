@@ -34,7 +34,7 @@ Navigate to the billing page within GCP and add a credit card.  At the time of t
 
 ## Create a GCP Project
 
-Google Cloud Platform projects are simply ways to organize any cloud computing tasks required to complete a certain goal; in this case - running a Metis Verifier node.
+Google Cloud Platform projects are simply ways to organize any cloud computing tasks required to complete a certain goal. In this casem, running a Metis Verifier node.
 
 Click the dropdown arrow at the top toolbar on the GCP dashboard homepage and select "New Project".
 
@@ -87,6 +87,8 @@ Choose the following hardware/software combination for the VM Instance.
 Verify "Allow HTTP Traffic" AND "Allow HTTS Traffic" are **NOT CHECKED**.
 
 Leave all other selections default and choose Create.  The following screen will appear displaying the running instance of the new virtual macine.  Make note of the external IP address for later use.
+
+![vm_instance_dash](/tutorials/images/vm_instance_dash.jpg)
 
 ## Setup VM Instance Firewall Rules
 Select the Setup Firewall button on the VM Instance dashboard.  
