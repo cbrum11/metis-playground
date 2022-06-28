@@ -239,6 +239,26 @@ More info to come...
 
 More info to come...
 
+## Wait for Node Sync
+
+With all containers running - the new Metis Verifier Node is attempting to sync with the Ethereum network.  To complete this action, the node needs to download historical L1 transaction data (read - the actual Ethereum blockchain).  To check the status of this sync, complete the following.  Note: depending on node connection and hardware, this sync is expected to take multiple hours.
+
+The following command will search the last 10 lines of the l2geth-mainnet container and return a line with the word `blocknumber`.
+
+`docker-compose logs --tail 10 l2geth-mainnet | grep blocknumber`
+
+Result:
+
+```
+l2geth-mainnet_1  | INFO [06-28|01:04:08.810] New block                                index=253130 l1-timestamp=1641658421 l1-blocknumber=13965770 tx-hash=0x42a072845627cef4ee7d298a8db97cbae87a315309244a294080e1b83cf55b99 queue-orign=sequencer gas=1196003    fees=0.020332051     elapsed=4.699ms
+```
+
+Compare the block number returned (`13965770` in the above example) to the most recent block number found on this [Etherscan Transaction Page](https://etherscan.io/address/0xf209815e595cdf3ed0aaf9665b1772e608ab9380).  When the block number of the Metis Verifier node reaches this block number - the node is sync'd.
+
+Alternatively, the following command will return a hash associated with the most recently sync'd transaction.  When this hash is equivalent to the most recent has at the above link - the node is sync'd.
+
+`curl 'http://localhost:8080/verifier/get/true/1088' | jq '.batch.l1TransactionHash'`
+
 ## Contact Metis Team
 Once you have verified all the above steps are complete, contact the Metis team at verifier@metis.io and provide your ERC20 wallet address + virtual machine external IP address.
 
