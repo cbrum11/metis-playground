@@ -255,6 +255,25 @@ Additionally, the Metis Verifier code is actually comprised of multiple docker c
 
 Finally, after cloning the codebase with git and installing docker + docker compose - you edited the main docker configuration file with an acceptable RPC endpoint and started the first container `dtl-mainnet`.  After you checked the logs to verify this container started correctly - you ran two additional containers `dtl-expose` and `l2geth-mainnet`.
 
+# Usefual Extras
+
+This section will include useful extra pieces of information as I learn more about Metis and Optimistic Rolloups in general.
+
+## L2Geth
+
+Geth is a command line interface package for running an Ethereum node (and interacting with the Ethereum network) implemented in the Go language.  L2Geth is a modified version of Geth specifically created for Optimistic L2s.
+
+The offical Metis Verifier Documentation states that the L2Geth container does the following:
+
+1. Gets states from DTL service
+2. Reconstructs blocks locally
+3. Provides a Web3 Interface for Your Applications
+
+To be completed -> Provide more detail on the above.
+
+## The Nuts and Bolts
+
+If you have any interest in understanding more parts of the Optimistic Rollup puzzle - check out [How does Optimism's Rollup Really Work?](https://research.paradigm.xyz/optimism#optimistic-geth)
 
 
 
