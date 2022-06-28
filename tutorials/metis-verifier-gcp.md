@@ -255,7 +255,7 @@ l2geth-mainnet_1  | INFO [06-28|01:04:08.810] New block                         
 
 Compare the block number returned (`13965770` in the above example) to the most recent block number found on this [Etherscan Transaction Page](https://etherscan.io/address/0xf209815e595cdf3ed0aaf9665b1772e608ab9380).  When the block number of the Metis Verifier node reaches this block number - the node is sync'd.
 
-Alternatively, the following command will return a hash associated with the most recently sync'd transaction.  When this hash is equivalent to the most recent has at the above link - the node is sync'd.
+Alternatively, the following command will return a hash associated with the most recently sync'd transaction.  When this hash is equivalent to the most recent hash at the above link - the node is sync'd.
 
 `curl 'http://localhost:8080/verifier/get/true/1088' | jq '.batch.l1TransactionHash'`
 
